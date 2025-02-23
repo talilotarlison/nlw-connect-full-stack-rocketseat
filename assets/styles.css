@@ -1,0 +1,243 @@
+/*CSS da pagina  inicial*/
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oxanium:wght@200..800&display=swap');
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #e1e1e6;
+    --secondary-color: #6c757d;
+    --background-dark-color: #10121A;
+    --background-dark-grey: #191D2B;
+    --border-color: #2e344e;
+    --background-light-color: #F1F1F1;
+    --background-light-color-2: rgba(3, 127, 255, 0.3);
+    --white-color: #DAE4F2;
+    --font-light-color: #a4acc4;
+    --font-dark-color: #313131;
+    --font-dark-color-2: #151515;
+    --sidebar-dark-color: #191D2B;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: url("https://raw.githubusercontent.com/maykbrito/my-public-files/main/nlw-19/bg.jpg") no-repeat center/cover;
+    min-height: 100vh;
+    color: var(--primary-color);
+    display: grid;
+    place-items: center;
+    padding: 2rem 1rem;
+}
+
+input,
+button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: grid;
+    justify-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-family: "Oxanium", sans-serif;
+    text-align: center;
+    line-height: 1%;
+    color: var(--white-color);
+}
+
+span {
+    font-size: 2.7rem;
+    color: var(--white-color);
+    font-family: "Oxanium", sans-serif;
+    margin: 0%;
+    line-height: 40%;
+}
+
+h1,
+div {
+    color: #6f9de2;
+}
+
+main {
+    display: grid;
+    gap: 1.25rem;
+    max-width: 368px;
+}
+
+section {
+    padding: 1.5rem;
+    background: #191024;
+    border: 1px solid #21252c;
+    border-radius: 1rem;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-family: "Oxanium", sans-serif;
+    font-size: 1.25rem;
+    line-height: 100%;
+    color: #c8d8da;
+}
+
+.badge {
+    font-size: 0.75rem;
+    line-height: 160%;
+    font-weight: 600;
+    color: #9871f3;
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.badge::before {
+    content: "";
+    display: block;
+    width: 1.4rem;
+    height: 1.4rem;
+    background: url("https://raw.githubusercontent.com/maykbrito/my-public-files/main/nlw-19/radio.svg") no-repeat center;
+}
+
+p {
+    font-size: 0.875rem;
+    line-height: 160%;
+    color: #95A1B1;
+
+}
+
+form {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.input-wrapper {
+    display: grid;
+    gap: 0.75rem;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    height: 3rem;
+    border: 1px solid #21252c;
+    background-color: #13161B;
+    padding: 0 1rem;
+    border-radius: 10px;
+}
+
+
+.input-group:focus-within {
+    outline: 2px solid white;
+}
+
+/* .input-group:focus-within{
+   border: 2px solid white;
+} */
+
+input {
+    background: none;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    color: #e1e1e6;
+    outline: none;
+}
+
+input::placeholder {
+    line-height: 160%;
+    color: #6F7D90;
+}
+
+button {
+    border: 0;
+    background: #2A313C;
+    color: #6f9de2;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.25rem;
+    border-radius: 10px;
+
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 160%;
+
+    cursor: pointer;
+
+    transition: filter .2s;
+}
+
+button:hover {
+    filter: brightness(1.1);
+    color: #2A313C;
+    background: #6f9de2;
+}
+
+button:hover img {
+    background: #2a313e !important;
+    border-radius: 20px;
+}
+
+.page-invite main {
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Oxanium';
+    font-size: 1.25rem;
+    color: #9871f3;
+    text-align: center;
+}
+
+main p {
+    text-align: center;
+}
+
+.stats {
+    margin-top: 1.5rem;
+    padding: 1.25rem;
+    text-align: center;
+    position: relative;
+}
+
+.stats::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url("https://raw.githubusercontent.com/maykbrito/my-public-files/main/nlw-19/verify.svg") no-repeat;
+    position: absolute;
+    top: .5rem;
+    left: .5rem;
+}
+
+h4 {
+    margin-top: .5rem;
+    font-family: 'Oxanium';
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 100%;
+    color: #C8d0da;
+}
